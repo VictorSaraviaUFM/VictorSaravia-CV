@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Victor Saravia — Computer Science Student | Software, Cloud, Testing & Data</title>
+  <meta name="description" content="Victor Saravia, Computer Science student at Universidad Francisco Marroquín. Projects in full-stack development on AWS, QA automation with CI/CD, and Big Data streaming pipelines.">
+  <meta property="og:title" content="Victor Saravia — Computer Science Student">
+  <meta property="og:description" content="Full-stack on AWS, QA automation and CI/CD, Big Data pipelines. Open to internships, junior and project-based roles.">
+  <meta property="og:type" content="website">
+  <!-- TODO after deploy: <meta property="og:url" content="https://YOUR-SITE"> and og:image -->
+  <meta name="theme-color" content="#0a1a33">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>/* set theme before paint: saved choice, else system preference */
+    (function(){var t;try{t=localStorage.getItem("theme")}catch(e){}
+    if(t!=="light"&&t!=="dark"){t=window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"}
+    document.documentElement.setAttribute("data-theme",t)})();</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap nav-in">
+  <a class="logo" href="#top" aria-label="Victor Saravia, home">VS<span>.</span></a>
+  <nav aria-label="Primary"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a></nav>
+  <button id="theme" class="theme" type="button" aria-pressed="false"><span id="theme-label">Light mode</span></button>
+</div></header>
+
+<main id="main">
+  <section class="hero" id="top"><div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="eyebrow" id="h-eyebrow"></p>
+      <h1 id="h-name"></h1>
+      <p class="role" id="h-role"></p>
+      <p class="lead" id="h-lead"></p>
+      <div class="cta" id="h-cta"></div>
+    </div>
+    <figure class="photo"><img id="h-photo" width="260" height="260" alt="Portrait of Victor Saravia"><span class="initials" id="h-init" hidden>VS</span></figure>
+  </div></section>
+
+  <section id="about" class="sec"><div class="wrap"><h2>About</h2>
+    <div class="about"><div id="about-text"></div><ul class="traits" id="traits"></ul></div></div></section>
+
+  <section id="projects" class="sec alt"><div class="wrap"><h2>Projects</h2>
+    <p class="sub">Substantial academic projects built with tools used in industry. Team projects are described as team work.</p>
+    <div class="grid" id="project-grid"></div></div></section>
+
+  <section id="skills" class="sec"><div class="wrap"><h2>Skills</h2>
+    <p class="sub">What I use and can talk through in detail, grouped by how I've used it.</p>
+    <div class="skills" id="skills-grid"></div></div></section>
+
+  <section id="education" class="sec alt"><div class="wrap"><h2>Education</h2><div id="edu"></div><p class="muted" id="langs"></p></div></section>
+
+  <section id="certifications" class="sec"><div class="wrap"><h2>Certifications &amp; Licenses</h2><ul class="certs" id="certs"></ul></div></section>
+
+  <section id="interests" class="sec alt"><div class="wrap"><h2>Beyond the code</h2><div class="grid3" id="interests-grid"></div></div></section>
+
+  <section id="contact" class="sec contact"><div class="wrap"><h2>Contact</h2>
+    <p class="lead">Open to internships, junior roles and project-based work with teams where I can contribute and keep growing.</p>
+    <div class="cta" id="c-cta"></div></div></section>
+</main>
+<footer class="foot"><div class="wrap"><p>© <span id="year"></span> Victor Saravia · Guatemala</p></div></footer>
+<noscript><p style="padding:24px">Enable JavaScript to see the full page, or visit
+  <a href="https://github.com/VictorSaraviaUFM">GitHub</a> · <a href="assets/resume.pdf">Resume (PDF)</a>.</p></noscript>
+<script src="content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
