@@ -1,67 +1,104 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Victor Saravia — Computer Science Student | Software, Cloud, Testing & Data</title>
-  <meta name="description" content="Victor Saravia, Computer Science student at Universidad Francisco Marroquín. Projects in full-stack development on AWS, QA automation with CI/CD, and Big Data streaming pipelines.">
-  <meta property="og:title" content="Victor Saravia — Computer Science Student">
-  <meta property="og:description" content="Full-stack on AWS, QA automation and CI/CD, Big Data pipelines. Open to internships, junior and project-based roles.">
-  <meta property="og:type" content="website">
-  <!-- TODO after deploy: <meta property="og:url" content="https://YOUR-SITE"> and og:image -->
-  <meta name="theme-color" content="#0a1a33">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <script>/* set theme before paint: saved choice, else system preference */
-    (function(){var t;try{t=localStorage.getItem("theme")}catch(e){}
-    if(t!=="light"&&t!=="dark"){t=window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"}
-    document.documentElement.setAttribute("data-theme",t)})();</script>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Victor Saravia | Computer Science Student, Software, Cloud, Testing</title>
+<meta name="description" content="Victor Saravia, Computer Science student at Universidad Francisco Marroquín. Projects in full-stack development on AWS, test automation with CI/CD, and streaming data architecture.">
+<meta property="og:title" content="Victor Saravia | Computer Science Student">
+<meta property="og:description" content="Software, cloud, testing and data projects built in teams.">
+<meta property="og:type" content="website">
+<script>
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem("theme"); } catch (e) {}
+    if (t !== "light" && t !== "dark") t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", t);
+  })();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Victor Saravia","email":"mailto:saraviavi05@gmail.com","telephone":"+502 30500688","address":{"@type":"PostalAddress","addressLocality":"Mixco","addressCountry":"GT"},"alumniOf":"Universidad Francisco Marroquín","sameAs":["https://www.linkedin.com/in/victor-saravia-75724937a/","https://github.com/VictorSaraviaUFM"]}
+</script>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="nav"><div class="wrap nav-in">
-  <a class="logo" href="#top" aria-label="Victor Saravia, home">VS<span>.</span></a>
-  <nav aria-label="Primary"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a></nav>
-  <button id="theme" class="theme" type="button" aria-pressed="false"><span id="theme-label">Light mode</span></button>
-</div></header>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">Victor Saravia</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="toggle" type="button" aria-pressed="true"><span aria-hidden="true" class="dot"></span><span class="label">Light mode</span></button>
+  </div>
+</header>
 
 <main id="main">
-  <section class="hero" id="top"><div class="wrap hero-in">
+<section class="hero" id="top">
+  <div class="wrap hero-in">
     <div class="hero-text">
-      <p class="eyebrow" id="h-eyebrow"></p>
-      <h1 id="h-name"></h1>
-      <p class="role" id="h-role"></p>
-      <p class="lead" id="h-lead"></p>
-      <div class="cta" id="h-cta"></div>
+      <p class="role">Computer Science student · Universidad Francisco Marroquín</p>
+      <h1>Victor Saravia</h1>
+      <p class="tagline">I build software, test it and ship it.</p>
+      <p class="lead">Through team projects I have worked on a full-stack app on AWS, a hospital queue system delivered through an automated Jenkins pipeline, and a streaming data platform. I'm entering my final year ready to contribute, learn from the people around me and grow with the team.</p>
+      <p class="open">Open to internships, junior roles and project work with teams that care about building well.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="assets/resume.pdf" download>Download Resume</a>
+        <a class="btn" href="https://github.com/VictorSaraviaUFM" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/victor-saravia-75724937a/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
     </div>
-    <figure class="photo"><img id="h-photo" width="260" height="260" alt="Portrait of Victor Saravia"><span class="initials" id="h-init" hidden>VS</span></figure>
-  </div></section>
+    <figure class="photo" id="photo">
+      <img id="profile-img" src="assets/profile.jpg" alt="Portrait of Victor Saravia" width="360" height="360">
+      <figcaption class="ph" aria-hidden="true">Photo<br><small>assets/profile.jpg</small></figcaption>
+    </figure>
+  </div>
+</section>
 
-  <section id="about" class="sec"><div class="wrap"><h2>About</h2>
-    <div class="about"><div id="about-text"></div><ul class="traits" id="traits"></ul></div></div></section>
+<section class="sec" id="about">
+  <div class="wrap narrow">
+    <h2>About</h2>
+    <p>I'm a Computer Science student at UFM with a Machine Learning focus. What draws me to engineering is seeing a system work end to end: the data model, the API, the tests that protect it and the pipeline that delivers it.</p>
+    <p>I use AI to explore ideas, learn and prototype faster, then question the answers, read the code and verify what I ship. I want to understand everything I put my name on.</p>
+    <p>I'm curious, disciplined and analytical, and I like deep conversations and learning from both successes and failures. I can lead when it's needed and I'm just as comfortable working under someone else's lead. Outside code: football, the gym, and economics, where incentives and coordination mechanisms keep me asking questions.</p>
+  </div>
+</section>
 
-  <section id="projects" class="sec alt"><div class="wrap"><h2>Projects</h2>
-    <p class="sub">Substantial academic projects built with tools used in industry. Team projects are described as team work.</p>
-    <div class="grid" id="project-grid"></div></div></section>
+<section class="sec alt" id="skills">
+  <div class="wrap"><h2>Skills</h2><p class="sub">What I use and can discuss in depth, grouped by area.</p><div class="grid" id="skills-list"></div></div>
+</section>
 
-  <section id="skills" class="sec"><div class="wrap"><h2>Skills</h2>
-    <p class="sub">What I use and can talk through in detail, grouped by how I've used it.</p>
-    <div class="skills" id="skills-grid"></div></div></section>
+<section class="sec" id="projects">
+  <div class="wrap"><h2>Projects</h2><p class="sub">Academic projects approached as real engineering: version control, testing, deployment and teamwork.</p><div class="grid two" id="projects-list"></div></div>
+</section>
 
-  <section id="education" class="sec alt"><div class="wrap"><h2>Education</h2><div id="edu"></div><p class="muted" id="langs"></p></div></section>
+<section class="sec alt" id="education">
+  <div class="wrap"><h2>Education</h2><div class="grid two" id="education-list"></div>
+  <p class="meta langs"><strong>Languages:</strong> Spanish (native) · English (advanced / fluent)</p></div>
+</section>
 
-  <section id="certifications" class="sec"><div class="wrap"><h2>Certifications &amp; Licenses</h2><ul class="certs" id="certs"></ul></div></section>
+<section class="sec" id="certifications">
+  <div class="wrap narrow"><h2>Certifications &amp; Licenses</h2><ul class="certs" id="certs-list"></ul></div>
+</section>
 
-  <section id="interests" class="sec alt"><div class="wrap"><h2>Beyond the code</h2><div class="grid3" id="interests-grid"></div></div></section>
-
-  <section id="contact" class="sec contact"><div class="wrap"><h2>Contact</h2>
-    <p class="lead">Open to internships, junior roles and project-based work with teams where I can contribute and keep growing.</p>
-    <div class="cta" id="c-cta"></div></div></section>
+<section class="sec contact" id="contact">
+  <div class="wrap narrow">
+    <h2>Contact</h2>
+    <p>Let's talk about what you are building.</p>
+    <ul class="contact-list">
+      <li><a href="mailto:saraviavi05@gmail.com">saraviavi05@gmail.com</a></li>
+      <li><a href="tel:+50230500688">+502 3050 0688</a></li>
+      <li><a href="https://www.linkedin.com/in/victor-saravia-75724937a/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/VictorSaraviaUFM" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+    <p class="meta">Mixco, Guatemala</p>
+  </div>
+</section>
 </main>
-<footer class="foot"><div class="wrap"><p>© <span id="year"></span> Victor Saravia · Guatemala</p></div></footer>
-<noscript><p style="padding:24px">Enable JavaScript to see the full page, or visit
-  <a href="https://github.com/VictorSaraviaUFM">GitHub</a> · <a href="assets/resume.pdf">Resume (PDF)</a>.</p></noscript>
-<script src="content.js"></script>
+<footer class="foot"><div class="wrap">© <span id="year"></span> Victor Saravia</div></footer>
+<script src="data.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
